@@ -61,10 +61,9 @@ public class CustomArrayList<T> implements CustomList<T> {
 			if (items[i+1] != null) {
 				items[i] = items[i+1];				
 			}
-			if (i+1==size) {
-				items[i+1] = null;
-			}
+			
 		}
+		items[size-1] = null;
 		size--;
 		return null;
 	}
